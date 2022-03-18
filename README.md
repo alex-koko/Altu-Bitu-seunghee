@@ -11,8 +11,8 @@
 ---   
 ## ✏️ 커리큘럼   
 ### 🌙 초급
-|    날짜    | 주제 | 담당 튜터 | 강의 자료 | 문제 |
-|:----------:|:----:|:---------:|:---------:|:----:|
+|    날짜    | 주제 | 담당 튜터 | 강의 자료 | 문제 | 제출 여부 |
+|:----------:|:----:|:---------:|:---------:|:----:|:---------:|
 | 2022.03.03 |  OT  |     -     |[바로가기](https://github.com/Altu-Bitu-2/Notice/blob/main/00.%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/00.%20OT.pdf)|-|
 | 2022.03.04 |정렬|[@bsa0322](https://github.com/bsa0322)|[바로가기](https://github.com/Altu-Bitu-2/Notice/blob/main/00.%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/01.%20%EC%A0%95%EB%A0%AC.pdf)|[바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/03%EC%9B%94%2004%EC%9D%BC%20-%20%EC%A0%95%EB%A0%AC)|
 | 2022.03.08 |맵과 셋|[@bsa0322](https://github.com/bsa0322)|[바로가기](https://github.com/Altu-Bitu-2/Notice/blob/main/00.%20%EA%B0%95%EC%9D%98%EC%9E%90%EB%A3%8C/02.%20%EB%A7%B5%EA%B3%BC%20%EC%85%8B.pdf)|[바로가기](https://github.com/Altu-Bitu-2/Notice/tree/main/03%EC%9B%94%2008%EC%9D%BC%20-%20%EB%A7%B5%EA%B3%BC%20%EC%85%8B)|
