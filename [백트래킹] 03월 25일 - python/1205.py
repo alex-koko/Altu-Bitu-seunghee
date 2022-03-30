@@ -1,4 +1,5 @@
-﻿import sys
+﻿#1205번
+import sys
 input = sys.stdin.readline
 
 # 입력
@@ -17,7 +18,7 @@ for i in range (1, num, 1):      # 처음부터 끝까지 반복하며 점수 �
     else: 
         continue
 
-    if ( n_score > list[i] ):    # 태수의 점수가 i번째 요소보다 크면
+    if ( n_score > list[i] ):    # 태수의 점수가 i번째 요소보다 크다면
         print(grade)             # i번째 요소의 등수를 출력한다 (태수의 점수가 그 자리에 들어가므로)
 
-print(-1) # 조건에 해당하지 않은 경우 -1을 출력한다
+print(-1) # 조건에 해당하지 않은 경우 -1을 출력

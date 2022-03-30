@@ -11,4 +11,4 @@ numli = set(input().split()) # n개의 수가 주어지면 그 수를 집합(set
 
 # 연산 + 출력
 a = list(combinations(numli, m)) # 집합 중에 m개의 원소를 선택해서 저장한 것의 리스트 생성
-print(list(a)) # 리스트 출력
+print(list(a)) # 리스트 출력한다
