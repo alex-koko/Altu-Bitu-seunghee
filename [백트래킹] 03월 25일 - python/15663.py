@@ -11,7 +11,7 @@ input = sys.stdin.readline
 
 def backtracking(idx, m):
     if idx == m:
-        print(*answer) # *list -> 리스트의 요소를 하나씩 풀어서 print()에 인자로 넣어줌
+        print(*answer) # *list -> 리스트의 요소를 하나씩 풀어서 print()에 인자로 넣어준다
                        # print(*[1, 2, 3]) == print(1, 2, 3)
         return
 
