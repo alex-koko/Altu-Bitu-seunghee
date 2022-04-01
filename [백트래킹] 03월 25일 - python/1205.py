@@ -1,24 +1,39 @@
-﻿#1205번
-import sys
+﻿import sys
 input = sys.stdin.readline
 
+"""
+[등수 구하기]
+1. n = 0일 때, 고려
+2. 등수는 p보다 작지만, 랭킹 리스트에 들어가지 못하는 경우 고려
+.find(value): value가 있는 첫번째 인덱스를 리턴, 없으면 에러 발생
+입력된 점수를 기존 리스트에 넣고 인덱스 구하기 -> 해당 점수의 첫번째 인덱스 리턴
+.count(value): 리스트에서 value의 수를 세어 리턴, 없으면 에러 발생
+전체 점수 중 동점자의 수 구하기 -> 첫번째 등수(인덱스 + 1) + 동점자 수 - 1 
+                                = 첫번째 인덱스 + 동점자 수 
+                                = 해당 점수의 마지막 등수
+마지막 등수가 p를 넘지 않으면, 첫번째 인덱스로 구한 등수가 정답
+"""
+
 # 입력
-n, n_score, p = input().split() # n_score는 태수의 점수
-list = list(input().split())    # 점수들을 인풋받아서 리스트에 저장
+n, new_score, p = map(int, input().split())
 
+if n == 0:
+    answer = 1
+else:
+    # 입력
+    scores = list(map(int, input().split()))
+    
+    # 해당 점수의 가장 상위 등수 구하기
+    scores.append(new_score)
+    scores.sort(reverse=True)
+    first_idx = scores.index(new_score)
 
-# 풀이
-grade = 1       # grade = 등수
-num = len(list) # 리스트의 요소 개수를 num에 저장
-list.sort(reverse = True) # 리스트를 내림차순으로 정렬
+    # 동점자가 몇 명 있는지 구하기
+    same_score = scores.count(new_score)
 
-for i in range (1, num, 1):      # 처음부터 끝까지 반복하며 점수 비교할 것
-    if ( list[i] != list[i-1] ): # 만약 직전의 점수와 다르면
-        grade += 1               # 등수를 1 더한다
-    else: 
-        continue
+    if first_idx + same_score <= p:
+        answer = first_idx + 1
+    else: # 이미 스코어 보드가 다 찬 경우
+        answer = -1
 
-    if ( n_score > list[i] ):    # 태수의 점수가 i번째 요소보다 크다면
-        print(grade)             # i번째 요소의 등수를 출력한다 (태수의 점수가 그 자리에 들어가므로)
-
-print(-1) # 조건에 해당하지 않은 경우 -1을 출력
+print(answer)
